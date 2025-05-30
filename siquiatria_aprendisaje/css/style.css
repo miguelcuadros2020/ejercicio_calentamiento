@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    list-style: none;
+    text-decoration: none;
+    background-color: #D5FAFC;
+
+}
+
+header{
+    display: flex;
+}
