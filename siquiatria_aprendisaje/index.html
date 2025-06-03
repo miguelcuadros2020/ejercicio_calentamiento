@@ -1,50 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salud al día</title>
+    <meta name="description" content="Agenda tu cita para terapia, nutrición o psiquiatría en un espacio seguro y libre.">
+    <title>Psicólogos y Servicios de Salud</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <head>
-        <details>
-            <summary><a href="">Psicologos</summary>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="psicologos.html">Psicólogos</a></li>
+                <li><a href="programacion.html">Programación</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+                <li><a href="blog.html">Blog</a></li>
             </ul>
-        </details>
-        <details>
-            <summary><a href="">Programación</summary>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </details>
-        <details>
-            <summary><a href="">Contactos</summary>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </details>
-        <details>
-            <summary><a href="">Blog</summary>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </details>
-        <a class="bot-register" href="">Iniciar sesión
+            <div class="auth-links">
+                <a href="login.html" class="auth-btn register">Iniciar sesión</a>
+                <a href="register.html" class="auth-btn register">Regístrate</a>
+            </div>
+        </nav>
+    </header>
 
+    <main>
+        <section class="hero">
+            <button class="cta-btn">Agenda tu cita</button>
+            <h1>Un espacio para ser y sentirte en libertad</h1>
+        </section>
 
-        <a class="bot-register" href="">
+        <section class="services">
+            <h2>¿Qué tipo de apoyo necesitas?</h2>
+            <div class="service-grid">
+                <div class="boxes">
+                    <article class="service-card">
+                        <h3>Terapia</h3>
+                        <img src="./img/terapia.png" alt="terapia">
+                        <p>Para entender tus emociones</p>
+                    </article>
+                    <button onclick="window.location.href = './information.html'" class="service-btn" >Empezar ahora</button>
+                </div>
+                <div class="boxes">
+                    <article class="service-card">
+                        <h3>Nutrición</h3>
+                        <img src="./img/nutricion.png" alt="nutricion">
+                        <p>Para cuidar tu cuerpo</p>
+                    </article>
+                    <button class="service-btn" onclick="window.location.href = './information.html'">Empezar ahora</button>
+                </div>
+                <div class="boxes">
+                    <article class="service-card">
+                        <h3>Psiquiatría</h3>
+                        <img src="./img/psiquiatria.png" alt="psiquiatria">
+                        <p>Para casos clínicos</p>
+                    </article>
+                    <button class="service-btn" onclick="window.location.href = './information.html'">Empezar ahora</button>
+                </div>
+                
+            </div>
+            
+        </section>
 
-    </head>
+        <section class="contact-section">
+            <div class="contact-form">
+                <h2>Contacto</h2>
+                <form>
+                    <input type="text" placeholder="Nombre" aria-label="Nombre" required>
+                    <input type="text" placeholder="Apellido" aria-label="Apellido" required>
+                    <input type="email" placeholder="Email" aria-label="Email" required>
+                    <textarea placeholder="Mensaje" aria-label="Mensaje" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="stats">
+                <p>La Terapia Psicológica en Línea de Selia Está Construyendo un Mundo Más Esperanzador</p>
+                <div class="stats-grid">
+                    <div class="stat">
+                        <span>150 K+</span>
+                        <p>Citas realizadas</p>
+                    </div>
+                    <div class="stat">
+                        <span>20 K+</span>
+                        <p>Atendidos</p>
+                    </div>
+                    <div class="stat">
+                        <span>66.2 K+</span>
+                        <p>Comunidad Instagram</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Psicólogos y Servicios de Salud. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>

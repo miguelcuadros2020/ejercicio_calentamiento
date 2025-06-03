@@ -1,15 +1,282 @@
-*{
-    padding: 0;
+* {
     margin: 0;
-    font-family: 'Roboto',sans-serif;
-    font-size: 16px;
-    font-weight: 200;
-    list-style: none;
-    text-decoration: none;
-    background-color: #D5FAFC;
-
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header{
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #e6f0fa;
+}
+
+header {
+    background: linear-gradient(90deg, #ffffff 70%, #b368e6 100%);
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.nav-links li a:hover {
+    color: #6a5acd;
+}
+
+.auth-links {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-btn {
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.auth-btn.login {
+    color: #333;
+    border: 1px solid #333;
+}
+
+.auth-btn.register {
+    background-color: #6a5acd;
+    color: #fff;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #D5FAFC;
+}
+
+.cta-btn {
+    background-color: #6a5acd;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #9370db;
+}
+
+.services {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #D5FAFC;
+}
+
+.services h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.service-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color:#4779B3;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.boxes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & > button{
+        margin-top: 8px;
+        width: 233px;
+    }
+}
+
+.service-card img {
+    width: 168px;
+    height: 168px;
+    object-fit: cover;
+    border-radius: 84px;
+    margin-bottom: 15px;
+    background-color: #694569;
+    padding: 20px;
+}
+
+.service-card h3 {
+    font-size: 22px;
+    color: #bda9a9;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 15px;
+    min-height: 40px;
+}
+
+.service-btn {
+    background-color: #6a5acd;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    background-color: #1DB5BE;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.stats {
+    max-width: 600px;
+    color: #fff;
+    padding: 20px;
+}
+
+.stats p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.stats-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.stat {
+    background-color: #fff;
+    color: #333;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    min-width: 150px;
+}
+
+.stat span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.stat p {
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .services h2 {
+        font-size: 24px;
+    }
+
+    .service-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form,
+    .stats {
+        max-width: 100%;
+    }
+
+    .stats-grid {
+        justify-content: center;
+    }
 }
