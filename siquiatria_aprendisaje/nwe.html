@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Details con CSS</title>
+<style>
+.nav {
+  list-style: none;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.nav li {
+  display: inline-block; /* Permite que los elementos se coloquen horizontalmente */
+}
+
+.nav a {
+  display: block; /* Permite que todo el elemento sea sensible a clics */
+  padding: 10px 20px; /* Espacio interno para el enlace */
+  background-color: #f2f2f2;
+  text-decoration: none; /* Elimina la subrayado de los enlaces */
+  color: black; /* Color del texto */
+}
+
+.dropdown {
+  padding-left: 0%;
+  display: none; /* Oculta el menú desplegable por defecto */
+  position: absolute;
+  padding-top: 10px; /* Posiciona el menú fuera del flujo normal */
+  min-width: 160px;
+  z-index: 1; /* Asegura que el menú aparezca por encima de otros elementos */
+}
+
+.nav li:hover .dropdown {
+  display: block; /* Muestra el menú desplegable al pasar el ratón */
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+  <ul class="nav">
+    <li><a href="#">Inicio</a></li>
+    <li>
+      <a href="#">Productos</a>
+      <ul class="dropdown">
+        <li><a href="#">Producto 1</a></li>
+        <li><a href="#">Producto 2</a></li>
+        <li><a href="#">Producto 3</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Contacto</a></li>
+  </ul>
+</nav>
+</body>
+</html>
