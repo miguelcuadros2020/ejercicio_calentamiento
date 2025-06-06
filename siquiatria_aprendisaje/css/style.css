@@ -191,7 +191,7 @@ nav {
     justify-content: space-between;
     padding: 40px 20px;
     background-color: #1DB5BE;
-    flex-wrap: wrap;
+    flex-wrap: wrap
     gap: 20px;
 }
 

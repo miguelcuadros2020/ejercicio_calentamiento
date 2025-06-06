@@ -1,0 +1,72 @@
+:root{
+    --fuenteHeiding: "PT Sans", sans-serif;
+    --fuenteParrafos: "Open Sans", sans-serif;
+    --primario: #784D3C;
+    --claro: #e1e1e1e1;
+    --blanco: #ffffffff;
+    --negro: #000000fc;
+    --sizeSubheder: 1.9vh
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    list-style: none;
+    font-family: "PT Sans", sans-serif;
+}
+
+header{
+    height: 62vh;
+    background-image: url(../img/banner.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: grid;
+    grid-template: 17.5% 1fr / 1fr;
+    & *{
+        color: var(--blanco);
+        font-family: var(--fuenteParrafos);
+    }
+    & div.barra{
+        margin: auto;
+    }
+}
+.barra{
+    width: 89%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 200px;
+    padding: 1vh 3vh 0px 5px;
+    align-items: center;
+    font-size: var(--sizeSubheder);
+    & nav{
+        display: flex;
+        gap: 4vh;
+    }
+    &> h1, span{
+        font-family: var(--fuenteHeiding);
+        font-size: 5vh;
+    }
+    & h1{
+        font-weight: lighter;
+    }
+    & span{
+        font-weight: bold;
+    }
+
+}
+.texto{
+    width: 100%;
+    margin-top: 13.2vh;
+    text-align: center;
+    line-height: 4.5vh;
+    & h2{
+        font-size: 4.2vh;
+        font-family: var(--fuenteHeiding);
+    }
+    & p{
+        font-size: 1.7vh;
+    }
+}
