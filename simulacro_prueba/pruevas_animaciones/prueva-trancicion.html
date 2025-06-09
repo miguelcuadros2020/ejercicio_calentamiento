@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .loader {
+      width: 50px;
+      height: 50px;
+      border: 5px solid #f3f3f3;
+      border-top: 5px solid #3498db;
+      border-radius: 50%;
+      animation: girar 1s ease-in-out infinite;
+    }
+
+    @keyframes girar {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Animación compleja con múltiples propiedades */
+    .boton {
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    .boton:hover {
+      animation: efectoBoton 0.7s ease-in-out forwards;
+    }
+
+    @keyframes efectoBoton {
+      0% {
+        transform: rotate(0deg);
+        background-color: #3498db;
+        box-shadow: none;
+      }
+      50% {
+        transform: rotate(10deg);
+        background-color: #e74c3c;
+      }
+      100% {
+        transform: rotate(0deg);
+        background-color: #2ecc71;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+      }
+    }
+
+    /* Animación con porcentajes (movimiento) */
+    .circulo {
+      width: 50px;
+      height: 50px;
+      background-color: green;
+      border-radius: 50%;
+      position: relative;
+      animation: mover 1s ease-in-out infinite alternate;
+    }
+
+    @keyframes mover {
+      0% {
+        left: 0;
+        top: 0;
+        transform: scale(0);
+        background-color: green;
+      }
+      50% {
+        left: 50px;
+        top: 100px; /* Se mueve hacia abajo */
+         /* Se mueve a la derecha */
+        transform: scale(1.5);
+        background-color: #3498db; /* Aumenta tamaño */
+      }
+      100% {
+        top: 50px; /* Se mueve hacia abajo */
+         left: 200px;/* Se mueve a la derecha */
+        transform: scale(0.5);
+        background-color: rosybrown;
+      }
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="loader"></div>
+  <button class="boton">¡Pasa el cursor!</button>
+  <div class="circulo"></div>
+</body>
+</html>
